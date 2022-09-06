@@ -86,6 +86,122 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*------ Base Header -Footer Style ----------*/
+header,
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+}
+/*------ Header Style ----------*/
+header
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+/*------ Base Header -Nav Style ----------*/
+header
+nav{
+    display:flex;
+    justify-content: space-around;
+   flex-flow: row wrap;
+    align-items: center;
+}
+/*------ Base Header -Nav Ul Style ----------*/
+header
+nav
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+/*------ Base Footer Style ----------*/
+footer
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+/*------ Base Footer-social - Style ----------*/
+footer
+.social-icons
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/*------ Base Picture - Style ----------*/
+.hero-area
+{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+/*------ Base Aside Style ----------*/
+aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*------ Base Features - Style ----------*/
+.features{ 
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features
+.features-items{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*------ Base Review - Style ----------*/
+.reviews{
+  display: flex;
+  justify-content: center;
+ flex-flow:row wrap;
+}
+
+/*------ Base Mission - Style ----------*/
+.mission{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+/*------ Content-section - Style ----------*/
+.content-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*------ FAQ - Style ----------*/
+.faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+}
+
+.faq .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ flex-flow:row wrap;
+
+}
 
 /* ==========================================================================
    Helper classes
