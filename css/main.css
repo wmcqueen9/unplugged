@@ -86,7 +86,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*------ Base Header -Footer Style ----------*/
+/*------ Header style ----------*/
+header{
+  padding: 15px 0;
+}
+
 header,
 footer{
     display:flex;
@@ -94,28 +98,36 @@ footer{
     align-items: center;
     flex-flow:row wrap;
 }
-/*------ Header Style ----------*/
+
 header
 .content-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin:0;
 }
-/*------ Base Header -Nav Style ----------*/
+
+.header-divider{
+  width:100%;
+}
+
 header
 nav{
     display:flex;
     justify-content: space-around;
    flex-flow: row wrap;
     align-items: center;
+    width:60%;
+    
 }
-/*------ Base Header -Nav Ul Style ----------*/
+
 header
 nav
 ul{
     display: flex;
     justify-content: space-around;
+    width:100%;
 }
 /*------ Base Footer Style ----------*/
 footer
@@ -125,7 +137,9 @@ footer
     align-items: center;
     
 }
-/*------ Base Footer-social - Style ----------*/
+footer{
+  flex-direction: column;
+}
 footer
 .social-icons
 p{
@@ -133,6 +147,19 @@ p{
     justify-content: center;
     align-items: center;
    
+}
+footer .content-wrapper{
+  width: 55%;
+  margin:50px 0;
+}
+
+
+.footer p{
+  margin:0;
+}
+
+.footer .copyright{
+  margin: 20px 0;
 }
 /*------ Base Picture - Style ----------*/
 .hero-area
@@ -156,12 +183,26 @@ aside{
   flex-flow: row wrap;
 }
 
+.features article{
+  width:65%;
+  margin:30px 0;
+}
+
 .features
 .features-items{ 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.features
+.content-wrapper{
+  width:83%;
+  padding: 50px 0;
+}
+.features
+p{
+  margin:0;
 }
 
 /*------ Base Review - Style ----------*/
@@ -170,16 +211,14 @@ aside{
   justify-content: center;
  flex-flow:row wrap;
 }
-
-/*------ Base Mission - Style ----------*/
-.mission{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-flow:row wrap;
+.reviews h3{
+  width:55%;
 }
 
-/*------ Content-section - Style ----------*/
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 .content-section{
   display: flex;
   justify-content: center;
@@ -187,6 +226,16 @@ aside{
   flex-flow: row wrap;
 }
 
+.mission{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
+.contact-content p{
+  margin:0;
+}
 /*------ FAQ - Style ----------*/
 .faq{
   display: flex;
@@ -200,9 +249,21 @@ aside{
   justify-content: center;
   align-items: center;
  flex-flow:row wrap;
+  margin: 50px 0;
 
 }
+.faq h2 {
+  margin-bottom: 50px;
+}
 
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.content-wrapper{
+  width:88%;
+  margin:50px 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
