@@ -476,13 +476,71 @@ footer .copyright{
   .faq h2{
     width: 100%;
   }
+
 }
 
 
 
 @media only screen and (min-width:1200px) {
   /* Desktop Style here */
+  header{
+    padding: 35px 0;
+    justify-content: space-around;
+  }
+  
+  .content-wrapper{
+    max-width:960px;
+    margin:100px 0;
+  }
+
+  .hero-area h1 {
+    width: 55%;
+  }
+  aside .content-wrapper{
+    justify-content: space-around;
+    margin:160px 0;
+    display:flex;
+    flex-flow:row wrap;
+  }
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form{
+    width: 30%;
+    margin:0;
+
 }
+/** Features **/
+.features article{
+  flex-basis:26%;
+  display:flex;
+  justify-content:center;
+  flex-flow:column  wrap;
+
+}
+
+.features h2{
+  width: 80%;
+}
+/** Review **/
+.reviews article div{
+  width:35%;
+
+}
+/*** ============
+  About Page
+  =================*/
+
+  .mission h2, .contact-secton .content-wrapper h2{
+    width: 90%;
+  }
+  /*** ============
+  FAQ Page
+  =================*/
+
+  .faq h2{
+    width:100%;
+  }
+  }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
