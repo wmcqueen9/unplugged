@@ -352,17 +352,137 @@ p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen AND (min-width:768px) {
+  /* Tablet style here */
+/*------ Header style ----------*/
+header{
+  padding: 30px 0;
+  justify-content: space-around;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.content-wrapper{
+  max-width:640px;
+  margin:100px 0;
 }
 
+header
+.content-wrapper{
+  width:100%;
+  justify-content: space-between;
+}
+
+header 
+nav{
+  width: 20%;
+}
+
+header nav ul {
+  flex-wrap: wrap row;
+  justify-content: space-between;
+}
+
+.header-divider {
+ display: none;
+}
+/** Aside Content **/
+
+aside .content-wrapper{
+  margin: 50px 0;
+  display:flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+
+}
+aside .content-wrapper .form-description,
+aside .content-wrapper .form{
+  width: 40%;
+  margin:0;
+  
+}
+/** Features **/
+.features article{
+  flex-basis: 50%;
+  display:flex;
+  justify-content: center;
+  flex-flow: column wrap;
+
+}
+.features .features-items-description {
+  width: 50%;
+
+}
+/** Reviews **/
+.reviews article{
+  display:flex;
+  justify-content: space-between;
+  
+}
+.reviews article div{
+  width:50%;
+}
+/** Footer **/
+footer .content-wrapper{
+  width: 60%;
+  margin:100px 0;
+}
+.footer-content{ 
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+footer .contact{
+    margin-bottom:0;
+}
+footer .copyright{
+    width :100%;
+}
+/*** ============
+  About Page
+  =================*/
+  .mission-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px; 
+   }
+  
+  .mission-content p{
+    width: 45%;
+
+  }
+  .contact-secton .content-wrapper h2{
+    width: 80%
+  }
+  .contact-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+  /*** ============
+  FAQ Page
+  =================*/
+
+  .faq .content-wrapper{
+    justify-content: space-between;
+  }
+  .faq-content{
+    flex-basis: 40%;
+  }
+  .faq h2{
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width:1200px) {
+  /* Desktop Style here */
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -437,4 +557,3 @@ p{
     page-break-after: avoid;
   }
 }
-
