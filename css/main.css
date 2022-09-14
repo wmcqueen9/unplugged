@@ -114,6 +114,7 @@ h3,h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin:20px 0;
+
 }
 
 p{
@@ -132,6 +133,7 @@ address{
 .content-wrapper{
 width:90%;
 margin:50px 0;
+color: #e2e3ed;
 }
 
 
@@ -147,6 +149,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-flow:row wrap;
+    background-color: black;
 }
 
 header
@@ -162,6 +165,7 @@ header
   width:100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a; 
 }
 
 header
@@ -171,6 +175,7 @@ nav{
    flex-flow: row wrap;
     align-items: center;
     width:60%;
+    text-transform: uppercase;
     
 }
 
@@ -191,6 +196,7 @@ footer
 }
 footer{
   flex-direction: column;
+  color:#e2e3ed;
 }
 footer
 .social-icons
@@ -212,6 +218,7 @@ footer .content-wrapper{
 
 .footer .copyright{
   margin: 20px 0;
+
 }
 /*------ Base Picture - Style ----------*/
 .hero-area
@@ -220,12 +227,14 @@ footer .content-wrapper{
   justify-content: center;
   flex-flow: row wrap;
 }
+
 /*------ Base Aside Style ----------*/
 aside{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 /*------ Base Features - Style ----------*/
@@ -239,7 +248,9 @@ aside{
   width:65%;
   margin:30px 0;
 }
-
+.features h2 {
+  margin-bottom: 60px;
+}
 .features
 .features-items{ 
   display: flex;
@@ -262,9 +273,11 @@ p{
   display: flex;
   justify-content: center;
  flex-flow:row wrap;
+ background-color: #527158;
 }
 .reviews h3{
   width:55%;
+  color:#e2e3ed;
 }
 
 
@@ -276,6 +289,7 @@ p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .mission{
@@ -294,6 +308,7 @@ p{
   justify-content: center;
   align-items: center;
   flex-flow:row wrap;
+  background-color: #2a423a;
 }
 
 .faq .content-wrapper{
@@ -398,6 +413,32 @@ p{
   clear: both;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -421,6 +462,7 @@ header
 .content-wrapper{
   width:100%;
   justify-content: space-between;
+  background: #000;
 }
 
 header 
@@ -533,6 +575,7 @@ footer .copyright{
 
 
 
+
 @media only screen and (min-width:1200px) {
   /* Desktop Style here */
   header{
@@ -547,6 +590,7 @@ footer .copyright{
 
   .hero-area h1 {
     width: 55%;
+    color:#e2e3ed;
   }
   aside .content-wrapper{
     justify-content: space-around;
