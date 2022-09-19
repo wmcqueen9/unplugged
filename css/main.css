@@ -83,6 +83,12 @@ textarea {
   resize: vertical;
 }
 
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -108,6 +114,7 @@ a{
 h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight:500;
 }
 
 h3,h4{
@@ -120,7 +127,7 @@ h3,h4{
 p{
 font-family: 'Open sans', sans-serif;
 font-size:.875em;
-line-height: 1.2;
+line-height: 1.285;
 
 }
 
@@ -159,6 +166,7 @@ header
     align-items: center;
     flex-flow: row wrap;
     margin:0;
+ 
 }
 
 .header-divider{
@@ -176,7 +184,7 @@ nav{
     align-items: center;
     width:60%;
     text-transform: uppercase;
-    
+    font-size:1.125em;
 }
 
 header
@@ -186,6 +194,10 @@ ul{
     justify-content: space-around;
     width:100%;
 }
+header nav ul li{
+  font-size:1.125em;
+}
+
 /*------ Base Footer Style ----------*/
 footer
 .social-icons{
@@ -197,6 +209,7 @@ footer
 footer{
   flex-direction: column;
   color:#e2e3ed;
+  text-align: center;
 }
 footer
 .social-icons
@@ -211,7 +224,9 @@ footer .content-wrapper{
   margin:50px 0;
 }
 
-
+footer .contact{
+  margin-bottom:50px;
+}
 .footer p{
   margin:0;
 }
@@ -226,8 +241,32 @@ footer .content-wrapper{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/jake-melara-30679-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  background-position: center;
+}
+.hero-area h1{
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500; 
+  line-height: 1.2; 
+}
+img{
+  width: 100%;
 }
 
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+figure{
+    margin:0;
+}
 /*------ Base Aside Style ----------*/
 aside{
   display: flex;
@@ -237,11 +276,18 @@ aside{
   background-color: #527158;
 }
 
+aside .form{
+  margin-top:30px;
+}
+
 /*------ Base Features - Style ----------*/
 .features{ 
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/rawpixel-800820-unsplash1.jpg);
+  background-size:cover;
+  background-position:center;
 }
 
 .features article{
@@ -321,101 +367,20 @@ p{
 }
 .faq h2 {
   margin-bottom: 50px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
-
+.faq-content h4{
+  line-height: 1.333;
+}
 .content-wrapper{
   width:88%;
   margin:50px 0;
 }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-aside .form {
-  margin-top: 30px;
-}
  
 input[type=text] {
   box-sizing: border-box;
@@ -438,7 +403,88 @@ input[type=button] {
   text-align: center;
   text-transform: uppercase;
 }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
 
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden,
+ [hidden] {
+   display: none !important;
+ }
+ 
+ /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+ 
+ .sr-only {
+   border: 0;
+   clip: rect(0, 0, 0, 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   /* 1 */
+ }
+ 
+ /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+ 
+ .sr-only.focusable:active,
+ .sr-only.focusable:focus {
+   clip: auto;
+   height: auto;
+   margin: 0;
+   overflow: visible;
+   position: static;
+   white-space: inherit;
+   width: auto;
+ }
+ 
+ /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+ 
+ .invisible {
+   visibility: hidden;
+ }
+ 
+ /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+ 
+ .clearfix::before,
+ .clearfix::after {
+   content: " ";
+   display: table;
+ }
+ 
+ .clearfix::after {
+   clear: both;
+ }
+ 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -452,17 +498,32 @@ header{
   padding: 30px 0;
   justify-content: space-around;
 }
+h2{
+  font-size: 2.25em;
+  line-height:1.33;
 
+}
+h3{
+  font-size:1.5em;
+  line-height:1.25;
+
+
+}
 .content-wrapper{
   max-width:640px;
   margin:100px 0;
+}
+
+header{
+  justify-content: space-around;
+  padding: 35px 0;
 }
 
 header
 .content-wrapper{
   width:100%;
   justify-content: space-between;
-  background: #000;
+
 }
 
 header 
@@ -470,14 +531,28 @@ nav{
   width: 20%;
 }
 
+header figure{
+  width:30%;
+}
+
 header nav ul {
-  flex-wrap: wrap row;
   justify-content: space-between;
 }
 
 .header-divider {
  display: none;
 }
+
+.hero-area{
+  min-height:600px;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
+
 /** Aside Content **/
 
 aside .content-wrapper{
@@ -503,7 +578,11 @@ aside .content-wrapper .form{
 
 }
 .features .features-items-description {
-  width: 50%;
+  width: 60%;
+
+}
+.features h2{
+margin-bottom:20px;
 
 }
 /** Reviews **/
@@ -515,6 +594,16 @@ aside .content-wrapper .form{
 .reviews article div{
   width:50%;
 }
+.reviews h2{
+  width:85%;
+
+}
+
+.reviews h3{
+  width:70%;
+  margin: 0;
+  
+}
 /** Footer **/
 footer .content-wrapper{
   width: 60%;
@@ -524,10 +613,20 @@ footer .content-wrapper{
   display:flex;
   justify-content: space-between;
   align-items: center;
+flex-direction: row;
+}
 
+footer .contact{
+  margin-bottom:0;
+}
+footer h4{
+  font-size:1.5em;
 
 }
 
+footer p{
+  line-height: 1.26;
+}
 footer .contact{
     margin-bottom:0;
 }
@@ -570,7 +669,11 @@ footer .copyright{
   .faq h2{
     width: 100%;
   }
-
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
 }
 
 
@@ -579,38 +682,43 @@ footer .copyright{
 @media only screen and (min-width:1200px) {
   /* Desktop Style here */
   header{
-    padding: 35px 0;
-    justify-content: space-around;
+    padding: 15px 0;
+   
   }
   
   .content-wrapper{
     max-width:960px;
-    margin:100px 0;
+  
   }
-
+h2{
+  font-size:2.25em;
+}
+h3,h4{
+    font-size:1.875em;
+}
+p{
+    font-size:1.125em;
+    line-height:1.33;
+}
   .hero-area h1 {
-    width: 55%;
+    width: 80%;
     color:#e2e3ed;
+    font-size:3.75em;
   }
   aside .content-wrapper{
     justify-content: space-around;
-    margin:160px 0;
-    display:flex;
-    flex-flow:row wrap;
+ 
+
   }
   aside .content-wrapper .form-description,
   aside .content-wrapper .form{
     width: 30%;
-    margin:0;
+
 
 }
 /** Features **/
 .features article{
   flex-basis:26%;
-  display:flex;
-  justify-content:center;
-  flex-flow:column  wrap;
-
 }
 
 .features h2{
@@ -619,7 +727,12 @@ footer .copyright{
 /** Review **/
 .reviews article div{
   width:35%;
-
+}
+.reviews h2{
+  padding-bottom: 50px;
+}
+footer h4{
+  font-size: 1.875em;
 }
 /*** ============
   About Page
@@ -627,13 +740,23 @@ footer .copyright{
 
   .mission h2, .contact-secton .content-wrapper h2{
     width: 90%;
+    font-size: 3em;
   }
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
   /*** ============
   FAQ Page
   =================*/
 
   .faq h2{
     width:100%;
+  }
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
   }
 
