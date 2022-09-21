@@ -348,7 +348,7 @@ p{
 .map figure{
   width:100%;
   height:0;
-  padding-bottom: 125%;
+  padding-bottom: 56.25%;
   overflow: hidden;
   position: relative;
 }
@@ -363,6 +363,8 @@ p{
 .contact-content p{
   margin:0;
 }
+
+
 /*------ FAQ - Style ----------*/
 .faq{
   display: flex;
@@ -377,11 +379,11 @@ p{
   justify-content: center;
   align-items: center;
  flex-flow:row wrap;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
 
 }
 .faq h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
@@ -671,6 +673,13 @@ footer .copyright{
     align-items: flex-start;
 
   }
+  .map figure{
+    padding-bottom:54.5%;
+    }
+
+    .contact-content h4{
+      font-size: 1.5em;
+    }
   /*** ============
   FAQ Page
   =================*/
@@ -759,6 +768,9 @@ footer h4{
   }
   .contact-content h4 {
     font-size: 1.875em;
+  }
+  .map figure{
+    padding-bottom: 40%;
   }
 
   /*** ============
