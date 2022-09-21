@@ -325,7 +325,10 @@ p{
   width:55%;
   color:#e2e3ed;
 }
-
+.features i{
+  font-size:3.75em;
+    margin-bottom:40px;
+}
 
 /* ==========================================================================
    About Page
