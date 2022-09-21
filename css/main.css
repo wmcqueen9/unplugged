@@ -668,12 +668,12 @@ footer .copyright{
 
   }
   .contact-secton .content-wrapper h2{
-    width: 80%
+    width: 100%
   }
   .contact-content{
     display:flex;
     justify-content: space-between;
-    align-items: flex-start;
+
 
   }
   .map figure{
@@ -700,6 +700,10 @@ footer .copyright{
   .faq p {
       font-size: .875em;
       line-height: 1.125;
+  }
+  header figure{
+    width:35%;
+  
   }
 }
 
@@ -788,6 +792,7 @@ footer h4{
       font-size: 1.125em;
       line-height: 1;
   }
+
   }
 
 /* ==========================================================================
